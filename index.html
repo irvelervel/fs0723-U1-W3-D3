@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners in JS!</title>
+  </head>
+  <body>
+    <h1>EVENT LISTENERS</h1>
+    <p>
+      Questa lezione si incentrerà sugli eventi e sugli "ascoltatori di eventi"
+      (event listeners)
+    </p>
+    <h3>
+      Quando avete un bottone direttamente nell'HTML, è possibile assegnargli un
+      event listener direttamente come attributo nel tag:
+    </h3>
+    <!-- l'onclick di questo button collega la funzione htmlButtonClick sul click del bottone -->
+    <!-- a questa funzione htmlButtonClick passo esplicitamente l'event che si è appena scatenato nel browser -->
+    <!-- in modo da poterne usufruire nella funzione -->
+    <button
+      onclick="htmlButtonClick(event)"
+      onmouseenter="htmlButtonHovered()"
+      onmouseleave="htmlButtonNotHovered()"
+    >
+      CLICCAMI!
+    </button>
+    <hr />
+    <button onclick="loadKitten()">CARICA GATTINO</button>
+    <div id="images">
+      <!-- voglio inserire qui dentro l'immagine del gattino che genererò via JS -->
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

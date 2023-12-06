@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I form: parte 2</title>
+    <link rel="stylesheet" href="./assets/forms.css" />
+  </head>
+  <body>
+    <main>
+      <form id="main-form">
+        <div>
+          <label for="firstName">Il tuo nome</label>
+          <input
+            id="firstName"
+            placeholder="Mario Rossi"
+            maxlength="20"
+            required
+          />
+        </div>
+        <div>
+          <label for="age">La tua età</label>
+          <input id="age" type="number" placeholder="19" min="18" max="120" />
+        </div>
+        <div>
+          <label for="city">La tua città</label>
+          <input id="city" placeholder="Caltanissetta" />
+        </div>
+        <div>
+          <label for="bio">Descriviti</label>
+          <textarea
+            id="bio"
+            placeholder="Mi piacciono i gatti"
+            rows="10"
+            cols="50"
+          ></textarea>
+        </div>
+        <!-- un button all'interno di un form riceve automaticamente un type="submit" -->
+        <button>INVIA</button>
+        <!-- all'invio del form, di default la pagina si aggiornerà! questo comportamento NON ci piace, perchè
+            stiamo anche perdendo tutto il contenuto del form :( -->
+        <button type="reset">RESETTA</button>
+        <!-- un pulsante con type="reset" svuota il form in cui è inserito -->
+      </form>
+      <section id="phonebook">
+        <!-- qui dentro ci metteremo le card degli utenti! -->
+      </section>
+    </main>
+    <script src="./js/forms.js"></script>
+  </body>
+</html>

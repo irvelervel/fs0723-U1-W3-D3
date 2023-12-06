@@ -1,0 +1,22 @@
+body {
+  font-size: 1.2em;
+}
+
+form div {
+  margin: 1em;
+}
+
+form textarea {
+  resize: none;
+}
+
+#phonebook div {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: cyan;
+  font-size: 1.2em;
+}
